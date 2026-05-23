@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZK Recipes</title>
+    <!-- STYLESHEET LINKS -->
+    <!-- footer-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- twitter,insta,mail icons link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/mainlogo.png" alt="ZK Recipes"
+        /></a>
+      </div>
+
+      <h2>ZK Recipes - Savor at Every Step</h2>
+      <div class="Nav">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </header>
+    <!--INTRO NOTE-->
+    <div class="intro-note">
+      <h2>Welcome to the Arab World</h2>
+      <p>
+        Embark on a virtual journey across the Arab world! Explore the rich
+        history, recipes, ingredients, and culinary secrets of each country by
+        clicking on any of the nations below on the map.
+      </p>
+      <button class="cta-button" onclick="scrollToMap()">
+        <h4>Start Exploring</h4>
+      </button>
+    </div>
+
+    <!-- MAP SECTION -->
+    <div class="map-section" id="map">
+      <img
+        src="images/Screenshot 2025-02-08 181816.png"
+        alt="Arab World Map"
+        usemap="#image-map"
+      />
+      <map name="image-map">
+        <area
+          target="_top"
+          alt="SAUDI ARABIA"
+          title="SAUDI ARABIA"
+          href="./saudi/sa.html"
+          coords="414,287,548,359"
+          shape="rect"
+        />
+        <area
+          target="_top"
+          alt="KUWAIT"
+          title="KUWAIT"
+          href="./Kuwait/KUWAIT.html"
+          coords="595,95,749,125"
+          shape="rect"
+        />
+        <area
+          target="_top"
+          alt="BAHRAIN"
+          title="BAHRAIN"
+          href="./behrain/BEHRAIN.html"
+          coords="704,202,863,237"
+          shape="rect"
+        />
+        <area
+          target="_top"
+          alt="QATAR"
+          title="QATAR"
+          href="./qatar/QA.html"
+          coords="725,269,838,297"
+          shape="rect"
+        />
+        <area
+          target="_top"
+          alt="UAE"
+          title="UAE"
+          href="./UAE/uae.html"
+          coords="786,326,871,362"
+          shape="rect"
+        />
+        <area
+          target="_top"
+          alt="OMAN"
+          title="OMAN"
+          href="./Oman/OMAN.html"
+          coords="895,394,1007,427"
+          shape="rect"
+        />
+      </map>
+    </div>
+    <!-- SEARCH BAR  -->
+    <div class="intro-note">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h1>Search your recipe!</h1>
+            <div class="search-container">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                class="form-control search-input"
+                id="searchInput"
+                placeholder="Search..."
+              />
+              <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+
+    <footer>
+      <footer
+        class="text-center text-lg-start text-brown"
+        style="background-color: #fee9e9"
+      >
+        <div class="container p-4 pb-0">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <img src="./images/mainlogo.png" alt="" class="w-75 h-75" />
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">ZK Recipes</h6>
+              <p>
+                ZKRecipes is your trusted companion in the kitchen, offering a
+                taste of Gulf culinary heritage. With mouthwatering recipes &
+                creative cooking ideas, we make every meal an unforgettable
+                journey.
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
+              <p><a href="about.html" class="text-black">About</a></p>
+              <p>
+                <a href="t&c.html" class="text-black">Terms & Conditions</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Pune, India 411048, Pune</p>
+              <p><i class="fas fa-envelope mr-3"></i> ZKrecipes@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +91 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> +91 234 567 89</p>
+            </div>
+          </div>
+          <hr class="my-3" />
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="p-3">© 2025 Copyright ZKRecipes</div>
+            </div>
+            <div class="col-md-5 col-lg-4 text-center text-md-end">
+              <a
+                class="btn btn-outline-dark btn-floating m-1"
+                href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-dark btn-floating m-1"
+                href="https://x.com/?lang=en"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-dark btn-floating m-1"
+                href="https://www.instagram.com/accounts/login/?hl=en"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <!-- ALL SCRIPT FUNCTION -->
+
+    <!-- // Function to scroll to the map when the button is clicked -->
+    <script>
+      function scrollToMap() {
+        document.getElementById("map").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+      // Search function
+      let recipes = {
+        almondDates: "./recipes/almond.html",
+        aloobasheer: "./recipes/aloobasheer.html",
+        amba: "./recipes/amba.html",
+        anisetea: "./recipes/anisetea.html ",
+        areeka: "./recipes/areeka.html",
+        aseeda: "./recipes/aseeda.html ",
+        aserasab: "./recipes/aserasab.html",
+        awarqalb: "./recipes/awarqalb.html",
+        ayran: "./recipes/ayran.html",
+        baidtamat: "./recipes/baidtamat.html",
+        baklava: "./recipes/baklava.html",
+        tamrwamauz: "./recipes/bandate.html",
+        basbousa: "./recipes/basbousa.html ",
+        batataharra: "./recipes/batataharra.html ",
+        batheeth: "./recipes/batheeth.html ",
+        beefshawarma: "./recipes/beefshawarma.html",
+        behrainikebab: "./recipes/behrainikebab.html",
+        behrainihalwa: "./recipes/bhalwa.html",
+        boza: "./recipes/boza.html",
+        burek: "./recipes/burek.html",
+        kataificake: "./recipes/cake.html ",
+        camelburger: "./recipes/camelburger.html",
+        camelcurry: "./recipes/camelcurry.html ",
+        cheesebaklava: "./recipes/cbaklava.html ",
+        cheesefatayer: "./recipes/cfatayer.html",
+        chaihalib: "./recipes/chaihalib.html",
+        chebab: "./recipes/chebab.html ",
+        cheesechebab: "./recipes/cheesechebab.html",
+        cheesesambusa: "./recipes/cheesesambusa.html ",
+        cheesezatayer: "./recipes/cheesezatayer.html",
+        chelokebab: "./recipes/chelokebab.html",
+        coldbrew: "./recipes/coldbrew.html",
+        dajaj: "./recipes/dajaj.html",
+        dango: "./recipes/dango.html ",
+        daqoos: "./recipes/daqoos.html",
+        darabeel: "./recipes/darabeel.html",
+        datebrownies: "./recipes/datebrownies.html",
+        datecake: "./recipes/datecake.html",
+        datemilkshake: "./recipes/datemilk.html",
+        elbah: "./recipes/elbah.html",
+        falafel: "./recipes/falafel.html",
+        falafelsandwich: "./recipes/falafelsand.html",
+        foulmedammes: "./recipes/foulmedammes.html",
+        gabout: "./recipes/gabout.html",
+        gersogaily: "./recipes/gersogaily.html",
+        ghraiba: "./recipes/ghraiba.html",
+        haleeb: "./recipes/haleeb.html",
+        halwabar: "./recipes/halwabar.html ",
+        haneni: "./recipes/haneni.html ",
+        harees: "./recipes/harees.html ",
+        hummus: "./recipes/hummus.html",
+        jallab: "./recipes/jallab.html",
+        jareesh: "./recipes/jareesh.html ",
+        jareesharancini: "./recipes/jareesharancini.html",
+        jujube: "./recipes/jujube.html",
+        kaak: "./recipes/kaak.html",
+        kabsa: "./recipes/kabsa.html ",
+        kabsawings: "./recipes/kabsawings.html",
+        kaftah: "./recipes/kaftah.html ",
+        karak: "./recipes/karak.html",
+        karakoba: "./recipes/karaklatte.html ",
+        karkadeh: "./recipes/karkadeh.html",
+        keema: "./recipes/keema.html",
+        khabeesa: "./recipes/khabeesa.html",
+        khanfaroosh: "./recipes/khanfaroosh.html ",
+        kharoob: "./recipes/kharoob.html",
+        khobezjebn: "./recipes/khobezjebn.html",
+        khussherbet: "./recipes/khussherbet.html",
+        kibdeh: "./recipes/kibdeh.html",
+        kleija: "./recipes/kleija.html",
+        knafehbites: "./recipes/knafehbites.html",
+        knafehdates: "./recipes/knafehdates.html",
+        kousamahshi: "./recipes/kousamahshi.html ",
+        kunafacake: "./recipes/kunafacake.html",
+        kunafamilkshake: "./recipes/kunafamilkshake.html ",
+        labneh: "./recipes/labneh.html",
+        lahammandi: "./recipes/lahammandi.html ",
+        lambfatayer: "./recipes/lambfatayer.html",
+        lemona: "./recipes/lemona.html ",
+        lotusbalaleet: "./recipes/lotusbalaleet.html ",
+        luqaimat: "./recipes/luqaimat.html ",
+        luqaimatcereal: "./recipes/luqaimatcereal.html ",
+        luqbites: "./recipes/luqbites.html",
+        maamoul: "./recipes/maamoul.html",
+        machboos: "./recipes/machboos.html ",
+        madrouba: "./recipes/madrouba.html ",
+        mahohalwa: "./recipes/mahohalwa.html ",
+        mangosago: "./recipes/mangosago.html ",
+        maragmisir: "./recipes/maragmisir.html",
+        mashkool: "./recipes/mashkool.html",
+        masoub: "./recipes/masoub.html",
+        mawashrubian: "./recipes/mawashrubian.html",
+        muhallebi: "./recipes/muhallebi.html",
+        muhammar: "./recipes/muhammar.html",
+        muhammaricecream: "./recipes/muhammaricecream.html ",
+        mutabbaq: "./recipes/mutabbaq.html",
+        nabeez: "./recipes/nabeez.html ",
+        naqeealzalib: "./recipes/naqeealzalib.html",
+        omaniburger: "./recipes/omaniburger.html ",
+        omanichips: "./recipes/omanichips.html ",
+        ouzi: "./recipes/ouzi.html",
+        pistashake: "./recipes/pistashake.html",
+        qahwa: "./recipes/qahwa.html",
+        qahwamisujars: "./recipes/qahwamisujars.html ",
+        qamardeen: "./recipes/qamardeen.html",
+        qatayef: "./recipes/qatayef.html",
+        ranginak: "./recipes/ranginak.html ",
+        regag: "./recipes/regag.html ",
+        risotto: "./recipes/risotto.html ",
+        roselemonade: "./recipes/roselemonade.html",
+        rumman: "./recipes/rumman.html ",
+        sabelgafsha: "./recipes/sabelgafsha.html",
+        saffroncake: "./recipes/saffroncake.html ",
+        saffrontea: "./recipes/saffrontea.html",
+        saficedlatte: "./recipes/saficedlatte.html ",
+        safroselatte: "./recipes/safroselatte.html ",
+        safroseslush: "./recipes/safroseslush.html",
+        sahlab: "./recipes/sahlab.html",
+        saleeg: "./recipes/saleeg.html",
+        saloona: "./recipes/saloona.html ",
+        samakmashwi: "./recipes/samakmashwi.html",
+        samaksafi: "./recipes/samaksafi.html",
+        samboosatacos: "./recipes/samboosatacos.html ",
+        sambusa: "./recipes/sambusa.html ",
+        saudicoffee: "./recipes/saudicoffee.html",
+        schampagne: "./recipes/schampagne.html",
+        semolina: "./recipes/semolina.html",
+        shakshuka: "./recipes/shakshuka.html",
+        sharbatloza: "./recipes/sharbatloza.html",
+        sharbatzafran: "./recipes/sharbatzafran.html",
+        shawarma: "./recipes/shawarma.html ",
+        shawaya: "./recipes/shawaya.html",
+        shishtouk: "./recipes/shishtouk.html ",
+        shorbatadas: "./recipes/shorbatadas.html",
+        shrimpmachboos: "./recipes/shrimpmachboos.html ",
+        shuwadilla: "./recipes/shuwadilla.html ",
+        sliders: "./recipes/sliders.html ",
+        sobia: "./recipes/sobia.html",
+        sulaimantea: "./recipes/sulaimantea.html",
+        tamarhindi: "./recipes/tamarhindi.html",
+        tamees: "./recipes/tamees.html",
+        tashreeb: "./recipes/tashreeb.html",
+        taybeen: "./recipes/taybeen.html",
+        toot: "./recipes/toot.html",
+        ummali: "./recipes/ummali.html ",
+        vimtoicecream: "./recipes/vimtoicecream.html",
+        vimtosherbet: "./recipes/vimtosherbet.html",
+        warakenab: "./recipes/warakenab.html ",
+        zaatartea: "./recipes/zaatartea.html ",
+        zafranichai: "./recipes/zafranichai.html ",
+        zafranihalib: "./recipes/zafranihalib.html",
+        zalabia: "./recipes/zalabia.html",
+        zanjabilmilk: "./recipes/zanjabilmilk.html",
+        zatar: "./recipes/zatar.html",
+        zlabia: "./recipes/zlabia.html",
+      };
+
+      let searchInput = document.getElementById("searchInput");
+      let suggestionBox = document.getElementById("suggestions");
+
+      // Function to show limited suggestions
+      function showSuggestions(query) {
+        suggestionBox.innerHTML = ""; // Clear previous suggestions
+        query = query.toLowerCase().trim();
+
+        if (query.length < 2) {
+          suggestionBox.style.display = "none";
+          return;
+        }
+
+        let filteredRecipes = Object.keys(recipes)
+          .filter((recipe) => recipe.includes(query)) // Case-insensitive match
+          .sort((a, b) => a.indexOf(query) - b.indexOf(query)); // Prioritize words that start with query
+
+        if (filteredRecipes.length === 0) {
+          suggestionBox.style.display = "none"; // Hide if no matches
+          return;
+        }
+
+        filteredRecipes.forEach((recipe) => {
+          let item = document.createElement("li");
+          item.textContent = recipe.charAt(0).toUpperCase() + recipe.slice(1);
+          item.onclick = function () {
+            searchInput.value =
+              recipe.charAt(0).toUpperCase() + recipe.slice(1);
+            window.location.href = recipes[recipe]; // Redirect to recipe page
+          };
+          suggestionBox.appendChild(item);
+        });
+
+        suggestionBox.style.display = "block"; // Show suggestions
+      }
+
+      // Show suggestions when typing
+      searchInput.addEventListener("input", function () {
+        showSuggestions(this.value);
+      });
+
+      // Hide suggestions when clicking outside
+      document.addEventListener("click", function (e) {
+        if (!document.querySelector(".search-container").contains(e.target)) {
+          suggestionBox.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
